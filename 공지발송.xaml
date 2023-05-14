@@ -189,19 +189,19 @@
           <av:Size x:Key="ShapeSize">200,81</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="//step1 - 인터넷 열기" sap:VirtualizedContainerService.HintSize="984,6321" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence DisplayName="//step1 - 인터넷 열기" sap:VirtualizedContainerService.HintSize="986,5968" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="922,6210" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://unipass.customs.go.kr/csp/index.do">
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="924,5857" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://unipass.customs.go.kr/csp/index.do">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="890,6651" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="890,5755" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -275,7 +275,7 @@
                     </ui:Target>
                   </ui:Click.Target>
                 </ui:Click>
-                <Sequence DisplayName="Step1.2 - 조회하기" sap:VirtualizedContainerService.HintSize="828,6034" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Step1.2 - 조회하기" sap:VirtualizedContainerService.HintSize="828,5138" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -341,13 +341,13 @@
                       <OutArgument x:TypeArguments="x:Int32">[Num]</OutArgument>
                     </ui:GetValue.Value>
                   </ui:GetValue>
-                  <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="766,5136" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="[Num]" StartAt="1">
+                  <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="766,4586" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="[Num]" StartAt="1">
                     <ui:RepeatNumberOfTimesX.Body>
                       <ActivityAction x:TypeArguments="x:Int32">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="732,4980" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="732,4430" sap2010:WorkflowViewState.IdRef="Sequence_22">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -432,13 +432,21 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <Sequence sap:VirtualizedContainerService.HintSize="670,3914" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                          <Sequence sap:VirtualizedContainerService.HintSize="670,3364" sap2010:WorkflowViewState.IdRef="Sequence_27">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:BuildDataTable DataTable="[ExtractDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="608,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;제목&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;내용&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;첨부파일&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+                            <ui:BuildDataTable DataTable="[ExtractDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="608,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;제목&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;내용&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;첨부파일&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:BuildDataTable>
+                            <ui:BuildDataTable DataTable="[ExtractDT_]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="608,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;첨부파일&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -497,34 +505,23 @@
                                 <InArgument x:TypeArguments="x:String">[s_첨부.Trim]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <If Condition="[ss_첨부 = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="608,2914" sap2010:WorkflowViewState.IdRef="If_6">
+                            <If Condition="[ss_첨부 = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="608,2264" sap2010:WorkflowViewState.IdRef="If_6">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="528,424" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,234" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,336" sap2010:WorkflowViewState.IdRef="CommentOut_14">
-                                    <ui:CommentOut.Body>
-                                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,257" sap2010:WorkflowViewState.IdRef="Sequence_59">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[s_내용]" DisplayName="Send SMTP Mail Message" Email="rudtjr922@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,146" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="False" Password="erlfzkghezguvhrq" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[s_제목]" To="rudtjr922@gmail.com">
-                                          <ui:SendMail.Files>
-                                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
-                                          </ui:SendMail.Files>
-                                        </ui:SendMail>
-                                      </Sequence>
-                                    </ui:CommentOut.Body>
-                                  </ui:CommentOut>
+                                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[s_내용]" DisplayName="Send SMTP Mail Message" Email="rudtjr922@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_5" IgnoreCRL="False" IsBodyHtml="False" Password="erlfzkghezguvhrq" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[s_제목]" To="rudtjr922@gmail.com">
+                                    <ui:SendMail.Files>
+                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                                    </ui:SendMail.Files>
+                                  </ui:SendMail>
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="574,2308" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                <Sequence sap:VirtualizedContainerService.HintSize="574,1848" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:Int32" Name="S_idx">
                                       <Variable.Default>
@@ -537,22 +534,14 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="532,1436" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[cnt &gt; S_idx]" DisplayName="While" sap:VirtualizedContainerService.HintSize="532,1202" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
                                     <ui:InterruptibleWhile.Body>
-                                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1270" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1036" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:BuildDataTable DataTable="[ExtractDT_]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;첨부파일&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:BuildDataTable>
                                         <ui:GetValue ContinueOnError="True" DisplayName="Get Text 'A '" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="GetValue_5">
                                           <ui:GetValue.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d2209d76-4de9-472d-a7cc-d17472438b36" InformativeScreenshot="9930a9a459675ed31fb429c9b06c3ff1" Selector="[string.Format(&quot;&lt;webctrl parentname='ntarBrkdRsltVo' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TH' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tableRow='4' tag='A' idx='{0}' /&gt;&quot;, cnt)]" TimeoutMS="200">
@@ -565,7 +554,6 @@
                                             <OutArgument x:TypeArguments="x:String">[SS_첨부파일]</OutArgument>
                                           </ui:GetValue.Value>
                                         </ui:GetValue>
-                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{SS_첨부파일}]" DataTable="[ExtractDT_]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
@@ -601,6 +589,24 @@
                                             <InArgument x:TypeArguments="x:Int32">[cnt + 1]</InArgument>
                                           </Assign.Value>
                                         </Assign>
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,297" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{SS_첨부파일}]" DataTable="[ExtractDT_]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="388,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:CommentOut>
                                         <If Condition="[cnt = 4]" sap:VirtualizedContainerService.HintSize="434,295" sap2010:WorkflowViewState.IdRef="If_7">
                                           <If.Then>
                                             <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_60">
@@ -618,36 +624,17 @@
                                         </If>
                                       </Sequence>
                                     </ui:InterruptibleWhile.Body>
-                                    <ui:InterruptibleWhile.Condition>
-                                      <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="cnt &gt; S_idx" />
-                                    </ui:InterruptibleWhile.Condition>
                                   </ui:InterruptibleWhile>
-                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDT_]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="532,502" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-                                    <ui:ForEachRow.Body>
-                                      <ActivityAction x:TypeArguments="sd:DataRow">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                                        </ActivityAction.Argument>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="450,387" sap2010:WorkflowViewState.IdRef="Sequence_63">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[s_내용]" DisplayName="Send SMTP Mail Message" Email="rudtjr922@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,146" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="erlfzkghezguvhrq" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[s_제목]" To="rudtjr922@gmail.com">
-                                            <ui:SendMail.Files>
-                                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                <InArgument x:TypeArguments="x:String">
-                                                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;C:\Users\rudtj\OneDrive\바탕 화면\강의 다운로드파일\&quot;+row(0).ToString" />
-                                                </InArgument>
-                                              </scg:List>
-                                            </ui:SendMail.Files>
-                                          </ui:SendMail>
-                                        </Sequence>
-                                      </ActivityAction>
-                                    </ui:ForEachRow.Body>
-                                  </ui:ForEachRow>
+                                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="532,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[s_내용]" DisplayName="Send SMTP Mail Message" Email="rudtjr922@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="532,146" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="erlfzkghezguvhrq" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[s_제목]" To="rudtjr922@gmail.com">
+                                    <ui:SendMail.Files>
+                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                        <InArgument x:TypeArguments="x:String">
+                                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;C:\Users\rudtj\OneDrive\바탕 화면\강의 다운로드파일\&quot;+SS_첨부파일" />
+                                        </InArgument>
+                                      </scg:List>
+                                    </ui:SendMail.Files>
+                                  </ui:SendMail>
                                   <Assign sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_10">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Int32">[cnt]</OutArgument>
@@ -701,24 +688,6 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:RepeatNumberOfTimesX>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="766,306" sap2010:WorkflowViewState.IdRef="CommentOut_11">
-                    <ui:CommentOut.Body>
-                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,227" sap2010:WorkflowViewState.IdRef="Sequence_45">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:WriteRange AddHeaders="True" DataTable="[ExtractDT]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet1" WorkbookPath="C:\Users\rudtj\Desktop\메모장\공지발.xlsx">
-                          <ui:WriteRange.StartingCell>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </ui:WriteRange.StartingCell>
-                        </ui:WriteRange>
-                      </Sequence>
-                    </ui:CommentOut.Body>
-                  </ui:CommentOut>
                 </Sequence>
               </Sequence>
             </ActivityAction>
